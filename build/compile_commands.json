@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/build",
+  "command": "/usr/bin/clang++ -I/home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/include -g -std=gnu++17 -Wall -Wextra -Werror -O2 -o CMakeFiles/lsm_engine.dir/src/MemTable.cpp.o -c /home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/src/MemTable.cpp",
+  "file": "/home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/src/MemTable.cpp",
+  "output": "CMakeFiles/lsm_engine.dir/src/MemTable.cpp.o"
+},
+{
+  "directory": "/home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/build",
+  "command": "/usr/bin/clang++ -I/home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/include -g -std=gnu++17 -Wall -Wextra -Werror -O2 -o CMakeFiles/lsm_sandbox.dir/src/main.cpp.o -c /home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/src/main.cpp",
+  "file": "/home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/src/main.cpp",
+  "output": "CMakeFiles/lsm_sandbox.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/build",
+  "command": "/usr/bin/clang++ -I/home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/include -g -std=gnu++17 -Wall -Wextra -Werror -O2 -o CMakeFiles/memtable_test.dir/tests/MemTable_test.cpp.o -c /home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/tests/MemTable_test.cpp",
+  "file": "/home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/tests/MemTable_test.cpp",
+  "output": "CMakeFiles/memtable_test.dir/tests/MemTable_test.cpp.o"
+}
+]
