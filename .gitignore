@@ -26,3 +26,5 @@ compile_commands.json
 .vscode/
 .idea/
 .DS_Store
+
+lsm_tree_engine.md
