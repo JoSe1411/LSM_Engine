@@ -44,7 +44,7 @@ void MemTable::Put(const std::string &key, const std::string &value) {
     }
     update[i] = curr;
   }
-  if (curr->forward[0]->key == key) {
+  if (curr->forward[0] != nullptr && curr->forward[0]->key == key) {
     curr = curr->forward[0];
     approximate_size_bytes_ -= curr->value.size();
     approximate_size_bytes_ += value.size();
@@ -58,7 +58,6 @@ void MemTable::Put(const std::string &key, const std::string &value) {
         update[i] = head_;
       }
       current_level_ = lvl;
-      head_->forward[lvl] = new_node;
     }
     for (int i = 0; i <= lvl; i++) {
       Node *temp = update[i];
@@ -144,7 +143,7 @@ void MemTable::Iterator::Next() {
 
 const std::string &MemTable::Iterator::key() const { return current_->key; }
 
-const std::string &MemTable::Iterator::value() const { return current_->key; }
+const std::string &MemTable::Iterator::value() const { return current_->value; }
 
 bool MemTable::Iterator::is_tombstone() const { return current_->is_tombstone; }
 

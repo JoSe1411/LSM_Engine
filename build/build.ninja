@@ -56,6 +56,13 @@ build CMakeFiles/lsm_engine.dir/src/MemTable.cpp.o: CXX_COMPILER__lsm_engine_uns
   OBJECT_DIR = CMakeFiles/lsm_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/lsm_engine.dir/src
 
+build CMakeFiles/lsm_engine.dir/src/WAL.cpp.o: CXX_COMPILER__lsm_engine_unscanned_Debug /home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/src/WAL.cpp || cmake_object_order_depends_target_lsm_engine
+  DEP_FILE = CMakeFiles/lsm_engine.dir/src/WAL.cpp.o.d
+  FLAGS = -g -std=gnu++17 -Wall -Wextra -Werror -O2
+  INCLUDES = -I/home/loaspoas/Desktop/Projects/CodingChallenges/LSM_Engine/include
+  OBJECT_DIR = CMakeFiles/lsm_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/lsm_engine.dir/src
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target lsm_engine
@@ -64,7 +71,7 @@ build CMakeFiles/lsm_engine.dir/src/MemTable.cpp.o: CXX_COMPILER__lsm_engine_uns
 #############################################
 # Link the static library liblsm_engine.a
 
-build liblsm_engine.a: CXX_STATIC_LIBRARY_LINKER__lsm_engine_Debug CMakeFiles/lsm_engine.dir/src/MemTable.cpp.o
+build liblsm_engine.a: CXX_STATIC_LIBRARY_LINKER__lsm_engine_Debug CMakeFiles/lsm_engine.dir/src/MemTable.cpp.o CMakeFiles/lsm_engine.dir/src/WAL.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/lsm_engine.dir
   POST_BUILD = :

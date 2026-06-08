@@ -13,6 +13,7 @@ include_directories(include)
 # Core engine library
 add_library(lsm_engine
     src/MemTable.cpp
+    src/WAL.cpp
 )
 
 # Sandbox runner
